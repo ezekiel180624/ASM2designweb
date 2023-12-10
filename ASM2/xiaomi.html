@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class=" container">
+        <div class="top">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/apple-iphone-15-pro-lineup-color-lineup-geo-230912-big-large-2x.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/a0611086-f343-4195-b0a7-89107727e5f8.webp" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/Galaxy-z-flip-5-co-nang-cap-gi-moi-khi-nao-ra-mat-gia-bao-nhieu-xtmobile.webp" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+                <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center ">
+                <span class="dot " onclick="currentSlide(1) "></span>
+                <span class="dot " onclick="currentSlide(2) "></span>
+                <span class="dot " onclick="currentSlide(3) "></span>
+            </div>
+            <div class="navbar">
+                <a href="1.html"><img src="img/btec.jpg" alt="" class="logo"></a>
+                <a href="1.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Smart phone
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                    <div class="dropdown-content">
+                        <a href="apple.html">Apple</a>
+                        <a href="samsung.html">Samsung</a>
+                        <a href="#">Xiaomi</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Accessory
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                    <div class="dropdown-content">
+                        <a href="headphone.html">Headphones</a>
+                        <a href="other.html">Other accessories</a>
+                    </div>
+                </div>
+                <a href="Contact.html">Feedback</a>
+                <span class="cart-icon">
+                    <div class="dropdown">
+                        <button class="dropbtn">phuc@gmail.com
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                        <div class="dropdown-content">
+                            <a href="profile.html">Profile</a>
+                            <a href="login.html">Logout</a>
+                        </div>
+                    </div>
+                </span>
+                <a href="cart.html" class="cart-icon" id="cartIcon" onclick="navigateToCartPage()"><span class="material-symbols-outlined">shopping_cart</span></a>
+            </div>
+        </div>
+
+        <div class="mid ">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="img/xiaomi-mi-11-ultra-600x600-2-600x600.jpg" alt="Jane" style="width:100%">
+                        <div class="container">
+                            <h2>Xiaomi Mi 11 Ultra</h2>
+                            <p class="title">999$</p>
+                            <p><button class="button" id="cart " onclick="addToCartAndNavigate( 'Xiaomi Mi 11 Ultra', 999) ">Add to cart</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="img/xiaomi-mi-a3-white-600x600.jpg" alt="Mike" style="width:100%">
+                        <div class="container">
+                            <h2>Xiaomi Mi A3</h2>
+                            <p class="title">900$</p>
+                            <p><button class="button" id="cart " onclick="addToCartAndNavigate( 'Xiaomi Mi A3', 900) ">Add to cart</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="img/xiaomi-redmi-note-10-thumb-white-200x200.jpg" alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Redmi Note 10</h2>
+                            <p class="title">800$</p>
+                            <p><button class="button" id="cart " onclick="addToCartAndNavigate( 'Redmi Note 10', 800) ">Add to cart</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="img/xiaomi-13-lite-2.jpg" alt="Jane" style="width:100%">
+                        <div class="container">
+                            <h2>Xiaomi 13 Lite</h2>
+                            <p class="title">1150$</p>
+                            <p><button class="button" id="cart " onclick="addToCartAndNavigate( 'Xiaomi 13 Lite', 1150) ">Add to cart</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="img/xiaomi-13-ultra-xanh.jpg.webp" alt="Mike" style="width:100%">
+                        <div class="container">
+                            <h2>Xiaomi 13 Ultra</h2>
+                            <p class="title">750$</p>
+                            <p><button class="button" id="cart " onclick="addToCartAndNavigate( 'Xiaomi 13 Ultra', 750) ">Add to cart</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="img/xiaomi14pro.webp" alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Xiaomi 14 Pro</h2>
+                            <p class="title">850$</p>
+                            <p><button class="button" id="cart " onclick="addToCartAndNavigate( 'Xiaomi 14 Pro', 850) ">Add to cart</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bot">
+        <div class="trai">
+            <h1>About Us</h1>
+            <p>We are a team of passionate individuals dedicated to providing top-quality products and services to our customers. With years of experience in the industry, we strive to deliver innovative solutions that meet the unique needs and expectations
+                of our clients. Whether you're looking for a reliable partner for your business or seeking top-notch products, we are here to help. Contact us today to discover how we can assist you in achieving your goals. We look forward to serving
+                you and being a part of your success story.
+            </p>
+        </div>
+        <div class="trai">
+            <h1>Follow us</h1>
+            <a href="https://www.facebook.com/profile.php?id=100033023595799"><img src="plugin/Facebook_Logo_(2019).png.webp" alt=""></a>
+            <img src="plugin/logo-instagram-vector.jpg" alt="">
+            <img src="plugin/kisspng-social-media-iphone-organization-logo-twitter-5abe3024502f30.2043853815224136043284.jpg" alt="">
+        </div>
+        <div class="trai">
+            <h1>Contact Information</h1>
+            <p>Email: <a href="">smartphone@gmail.com</a></p>
+            <p>Number: 0972025570</p>
+            <p>Address: Trinh Van Bo, Ha Noi</p>
+        </div>
+    </div>
+
+    <script src="1.js"></script>
+</body>
+
+</html>
